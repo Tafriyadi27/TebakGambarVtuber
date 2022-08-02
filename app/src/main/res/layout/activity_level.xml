@@ -30,14 +30,13 @@
     </TextView>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/vtuberimages"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:src="@drawable/ic_baseline_android_24"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         android:contentDescription="TODO">
 
     </ImageView>
@@ -51,7 +50,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+        app:layout_constraintTop_toBottomOf="@+id/vtuberimages"/>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"

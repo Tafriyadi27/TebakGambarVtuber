@@ -42,7 +42,7 @@ public class PlayAdapter extends RecyclerView.Adapter<PlayAdapter.PlayViewHolder
             @Override
             public void onClick(View view) {
                     Intent intent = new Intent(context, LevelActivity.class);
-//                intent.putExtra("level",levelList.get(position).getLevel());
+                intent.putExtra("level",levelList.get(holder.getAdapterPosition()).getLevel());
                 context.startActivity(intent);
             }
         });

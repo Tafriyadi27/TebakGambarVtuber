@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.skullbreraker.tebakgambarvtuber">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TebakGambarVtuber">
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://@vtuberimages"/>
         <activity
             android:name=".LevelActivity"
             android:exported="false" />

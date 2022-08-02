@@ -18,6 +18,8 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.play_activity);
         ButterKnife.bind(this);
+        LevelImages levelImages = new LevelImages();
+        levelImages.init(this);
         RecyclerView recyclerView = findViewById(R.id.recycleview);
         recyclerView.setLayoutManager(new GridLayoutManager(this,4, GridLayoutManager.VERTICAL,false));
         playAdapter = new PlayAdapter(this);
