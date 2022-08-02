@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/btnplay"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="312dp"
         android:text="@string/play"
@@ -29,7 +29,7 @@
 
     <Button
         android:id="@+id/btnoptions"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/options"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/btncredits"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/credits"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,12 +47,20 @@
 
     <Button
         android:id="@+id/btnexit"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="@string/exit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btncredits" />
 
-
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama User : ....."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnexit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

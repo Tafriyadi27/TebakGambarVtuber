@@ -8,12 +8,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.cloudinary.android.MediaManager;
 
 public class LevelImages {
+    private final MediaManager mediaManager;
 
-    public LevelImages() {
+
+    public LevelImages(Context context) {
+
+        mediaManager = MediaManager.get();
 
     }
 
-    void init(Context context) {
-        MediaManager.init(context);
+    public String getImgUrl(String level) {
+        return mediaManager.url().generate("vtuber/" + level + ".webp");
     }
 }

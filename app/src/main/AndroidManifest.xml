@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application
+        android:name=".MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +16,12 @@
             android:value="cloudinary://@vtuberimages"/>
         <activity
             android:name=".LevelActivity"
-            android:exported="false" />
+            android:parentActivityName=".PlayActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.skullbreraker.tebakgambarvtuber.PlayActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
