@@ -3,6 +3,7 @@
     package="com.skullbreraker.tebakgambarvtuber">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -11,25 +12,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TebakGambarVtuber">
-        <meta-data
-            android:name="CLOUDINARY_URL"
-            android:value="cloudinary://@vtuberimages"/>
         <activity
-            android:name=".LevelActivity"
-            android:parentActivityName=".PlayActivity"
-            android:exported="false" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.skullbreraker.tebakgambarvtuber.PlayActivity" />
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".RoutingActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UserActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="CLOUDINARY_URL"
+            android:value="cloudinary://@vtuberimages" />
+
+        <activity
+            android:name=".LevelActivity"
+            android:exported="false"
+            android:parentActivityName=".PlayActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.skullbreraker.tebakgambarvtuber.PlayActivity" />
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
         <activity
             android:name=".PlayActivity"
