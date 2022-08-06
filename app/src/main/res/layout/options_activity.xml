@@ -22,20 +22,9 @@
         android:id="@+id/checkboxMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="92dp"
         android:text="@string/music"
-        app:layout_constraintBottom_toTopOf="@+id/Sound"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/options" />
-
-    <CheckBox
-        android:id="@+id/checkboxSound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sound"
-        app:layout_constraintBottom_toTopOf="@+id/Sound"
-        app:layout_constraintEnd_toStartOf="@+id/checkboxMusic"
-        app:layout_constraintHorizontal_bias="0.544"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/options" />
 
@@ -44,76 +33,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/music"
-        app:layout_constraintBottom_toTopOf="@+id/seekBarMusic"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <SeekBar
-        android:id="@+id/seekBarSound"
-        style="@style/Widget.AppCompat.SeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:max="100"
-        android:progress="0"
-        app:layout_constraintBottom_toTopOf="@+id/persentaseSound"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/persentaseSound"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
-        android:gravity="center"
-        android:text="@string/persen"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/music"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/Sound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sound"
-        app:layout_constraintBottom_toTopOf="@+id/seekBarSound"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxMusic" />
 
     <SeekBar
         android:id="@+id/seekBarMusic"
         style="@style/Widget.AppCompat.SeekBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="406dp"
+        android:layout_height="17dp"
         android:max="100"
         android:progress="0"
-        app:layout_constraintBottom_toTopOf="@+id/persentaseMusic"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music" />
 
     <TextView
         android:id="@+id/persentaseMusic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
         android:gravity="center"
         android:text="@string/persen"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarMusic" />
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
         android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/persentaseMusic" />
 </androidx.constraintlayout.widget.ConstraintLayout>
