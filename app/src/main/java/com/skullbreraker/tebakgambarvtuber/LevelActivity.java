@@ -47,9 +47,10 @@ public class LevelActivity extends AppCompatActivity {
     public void level() {
         Intent intent = getIntent();
         String level = intent.getStringExtra("level");
+        String images = intent.getStringExtra("images");
         TextView textView = findViewById(R.id.textView2);
         textView.setText("LEVEL " + level);
         ImageView imageView = findViewById(R.id.vtuberimages);
-        Glide.with(this).load(PlayActivity.getUrl()).into(imageView);
+        Glide.with(this).load(images).placeholder(R.drawable.ic_baseline_image_24).into(imageView);
     }
 }
