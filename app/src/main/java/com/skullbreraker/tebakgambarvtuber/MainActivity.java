@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btnexit = findViewById(R.id.btnexit);
+        SharedPreferences sharedPreferences = getSharedPreferences("user", MODE_PRIVATE);
+        String user = sharedPreferences.getString("user", "");
+        if (user.isEmpty()) {
+            TextView textView = findViewById(R.id.txtUser);
+            textView.setText("Nama User : Guest");
+        } else
+        {
+            TextView textView = findViewById(R.id.txtUser);
+            textView.setText("Nama User : " + user);
+        }
+        ButterKnife.bind(this);
         btnexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
