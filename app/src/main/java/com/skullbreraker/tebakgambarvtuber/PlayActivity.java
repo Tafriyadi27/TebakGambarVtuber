@@ -26,13 +26,12 @@ import retrofit2.Response;
 public class PlayActivity extends AppCompatActivity {
     private PlayAdapter playAdapter;
     @NonNull
-    public static LevelImages levelImages;
     @Override
     protected void onCreate(@NonNull Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.play_activity);
         ButterKnife.bind(this);
-        levelImages = new LevelImages(this  );
+//        levelImages = new LevelImages(this  );
         RecyclerView recyclerView = findViewById(R.id.recycleview);
         recyclerView.setLayoutManager(new GridLayoutManager(this,4, GridLayoutManager.VERTICAL,false));
         playAdapter = new PlayAdapter(this);
@@ -60,8 +59,5 @@ public class PlayActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-    public static String getUrl(){
-        return levelImages.getImgUrl("Kureiji_Ollie");
     }
 }

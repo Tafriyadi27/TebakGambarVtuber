@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             TextView textView = findViewById(R.id.txtUser);
             textView.setText("Nama User : " + user);
         }
-        ButterKnife.bind(this);
         btnexit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
