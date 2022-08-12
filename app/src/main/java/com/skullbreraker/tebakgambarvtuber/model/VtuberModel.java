@@ -16,6 +16,9 @@ public class VtuberModel {
     @SerializedName("image")
     @Expose
     private String image;
+    @SerializedName("level")
+    @Expose
+    private Level level;
 
     public Integer getIdVtuber() {
         return idVtuber;
@@ -47,5 +50,29 @@ public class VtuberModel {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public Level getLevel() {
+        return level;
+    }
+
+    public void setLevel(Level level) {
+        this.level = level;
+    }
+
+    public class Level {
+
+        @SerializedName("is_solved")
+        @Expose
+        private Boolean isSolved;
+
+        public Boolean getIsSolved() {
+            return isSolved;
+        }
+
+        public void setIsSolved(Boolean isSolved) {
+            this.isSolved = isSolved;
+        }
+
     }
 }
