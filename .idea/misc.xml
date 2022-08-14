@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/drawable/bg_button_gradient_yellow_rounded18.xml" value="0.145" />
+        <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/drawable/bg_button_levelbutton.xml" value="0.145" />
+        <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/drawable/bg_button_menubutton.xml" value="0.145" />
+        <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/drawable/bg_button_submitbutton.xml" value="0.145" />
+        <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.145" />
         <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/layout/activity_level.xml" value="0.22826086956521738" />
         <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/layout/activity_main.xml" value="0.22780797101449277" />
         <entry key="..\:/Backup project android/TebakGambarVtuber/app/src/main/res/layout/activity_splash.xml" value="0.22780797101449277" />

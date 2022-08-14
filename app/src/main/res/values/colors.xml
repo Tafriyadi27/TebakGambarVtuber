@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#6da34d</color>
+    <color name="submitbutton">#ffbc0a</color>
+    <color name="submitbutton2">#ec7d10</color>
+    <color name="colorCoolGrey">#bababb</color>
+    <color name="menubutton">#e16036</color>
+    <color name="menubutton2">#e3170a</color>
+    <color name="levelbutton">#3a7ca5</color>
+    <color name="levelbutton2">#2e5a8c</color>
 </resources>
