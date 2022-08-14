@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".OptionsActivity">
 
     <TextView
@@ -12,6 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
         android:text="@string/options"
+        android:fontFamily="@font/superhero_normal"
+        android:textSize="30dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +28,9 @@
         android:layout_height="wrap_content"
         android:text="@string/music"
         android:layout_marginTop="30dp"
+        android:fontFamily="@font/superhero_normal"
+        android:textSize="20dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/options" />
@@ -34,6 +41,9 @@
         android:layout_height="wrap_content"
         android:text="@string/music"
         android:layout_marginTop="30dp"
+        android:fontFamily="@font/superhero_normal"
+        android:textSize="16dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkboxMusic" />
@@ -57,14 +67,16 @@
         android:gravity="center"
         android:text="@string/persen"
         android:textSize="15sp"
-        android:textStyle="bold"
+        android:fontFamily="@font/superhero_normal"
+        android:textColor="@color/black"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBarMusic" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnBack"
+        style="@style/submitbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back"
