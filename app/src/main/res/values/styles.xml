@@ -15,6 +15,7 @@
     </style>
 
     <style name="levelbutton" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/digital_gothic_normal</item>
         <item name="android:background">@drawable/bg_button_levelbutton</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">14sp</item>
