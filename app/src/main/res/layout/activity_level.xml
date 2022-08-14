@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".LevelActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -21,7 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LEVEL"
+        android:fontFamily="@font/superhero_normal"
         android:textSize="30sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
@@ -47,13 +50,16 @@
         android:layout_height="wrap_content"
         android:hint="Masukkan Nama Vtuber Disini"
         android:minHeight="48dp"
+        android:fontFamily="@font/superhero_normal"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vtuberimages" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSubmit"
+        style="@style/submitbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
