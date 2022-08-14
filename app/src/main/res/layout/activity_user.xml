@@ -3,14 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
     <TextView
         android:id="@+id/txtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat Datang"
-        android:textSize="20sp"
+        android:textSize="30sp"
+        android:fontFamily="@font/superhero_normal"
+        android:textColor="@color/black"
         android:layout_marginTop="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,16 +25,19 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:hint="Masukkan Nama User Disini"
+        android:fontFamily="@font/superhero_normal"
         app:layout_constraintBottom_toTopOf="@+id/btnStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtUser" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnStart"
+        style="@style/submitbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
+        android:textSize="18sp"
         android:layout_marginBottom="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
