@@ -10,11 +10,11 @@
         android:id="@+id/txtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat Datang"
-        android:textSize="30sp"
         android:fontFamily="@font/superhero_normal"
+        android:text="Selamat Datang"
         android:textColor="@color/black"
-        android:layout_marginTop="200dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,13 +23,13 @@
         android:id="@+id/edtUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:hint="Masukkan Nama User Disini"
         android:fontFamily="@font/superhero_normal"
-        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        android:hint="Masukkan Nama User Disini"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnStart"
@@ -37,8 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
-        android:layout_marginBottom="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUser" />
 </androidx.constraintlayout.widget.ConstraintLayout>
